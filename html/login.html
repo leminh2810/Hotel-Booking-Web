@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <div class="content">
+                <h1>VinClub - Where Values Meet Excellence</h1>
+                <p>Exclusive privileges for members when experiencing products and services within the comprehensive ecosystem of Vingroup.</p>
+            </div>
+        </div>
+        <div class="right-section">
+            <h1>Login</h1>
+            <div class="tab-content" id="login">
+                <div style="color: red;" id="login-error"></div>
+                <form id="loginForm">
+                    <input type="text" id="email" name="email" placeholder="Email" >
+                    <input type="password" id="password" name="password" placeholder="Password" >
+                    <button type="submit" class="login-btn">Đăng nhập</button>
+                    <div id="otp-container" style="display:none;">
+                        <input type="text" id="otp" name="otp" placeholder="Enter OTP"  />
+                        <button type="button" class="login-btn" onclick="verifyOtp()">Verify OTP</button>
+                    </div>
+                </form>
+                <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+                <p>Forger password? <a href="forgetpass.html">Forget Password</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="../js/login.js"></script>
+</body>
+</html>
